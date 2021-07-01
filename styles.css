@@ -26,6 +26,7 @@ body {
     top: 0;
     left: 0;
     background-color: #fff;
+    z-index: 5;
 }
 
 .lefticons, .middleicons ul {
@@ -66,7 +67,7 @@ body {
     width: 100%;
     max-width: 1220px;
     margin: 0 auto;
-    height: 180vh;
+    height: 200vh;
 }
 
 .header-image {
@@ -109,6 +110,66 @@ body {
 
 .promos span {
     color: yellow;
+}
+
+.imageslider1 {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(#ffe259, #ffa751);
+    min-width: 1220px;
+    min-height: 550px;
+    margin: 60px 0px;
+    overflow-x: scroll;
+    overflow-x: hidden;
+    position: relative;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.is1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    overflow-x: scroll;
+    overflow-x: hidden;
+    margin-top: 120px;
+}
+
+.is1 img {
+    margin: 0px 30px;
+    max-height: 216px;
+    max-width: 216px;
+    border-radius: 5px;
+}
+
+.prev {
+    position: absolute;
+    color: #fff;
+    bottom: 50%;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px black;
+    margin-left: 10px;
+}
+
+.prev, .next {
+    background-color: black;
+    border-radius: 50%;
+    width: 45px;
+    text-align: center;
+    height: 60px;
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    color: #fff;
+    right: 0;
+    bottom: 50%;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px black;
+    margin-right: 10px;
 }
 
 .categories {
@@ -208,6 +269,10 @@ hr {
     .bg5 {
         text-align: center;
         margin-top: -40px;
+    }
+
+    .container {
+        height: 250vh;
     }
 }
 

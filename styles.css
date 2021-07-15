@@ -274,6 +274,10 @@ hr {
     .container {
         height: 100%;
     }
+    
+    .lefticons, .righticons {
+        display: none;
+    }
 }
 
 
